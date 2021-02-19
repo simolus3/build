@@ -27,7 +27,7 @@ jobs:
           restore-keys: |
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: stable
       - id: checkout
@@ -50,7 +50,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -225,7 +225,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -261,7 +261,7 @@ jobs:
     name: "analyze_and_format; windows; Dart dev; PKG: _test_null_safety; `dartanalyzer --fatal-infos --fatal-warnings .`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -289,7 +289,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -312,7 +312,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: build_modules; `pub run test -P presubmit --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -335,7 +335,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: build; `pub run test --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -358,7 +358,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: build_config; `pub run test --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -381,7 +381,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: build_daemon; `pub run test --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -404,7 +404,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: scratch_space; `pub run test --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -427,7 +427,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: build_resolvers; `pub run test --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -450,7 +450,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: build_web_compilers; `pub run test --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -473,7 +473,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: build_test; `pub run test --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -496,7 +496,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: build_runner_core; `pub run test --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -529,7 +529,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -562,7 +562,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -595,7 +595,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -628,7 +628,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -661,7 +661,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -694,7 +694,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -727,7 +727,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -760,7 +760,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -793,7 +793,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -826,7 +826,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -863,7 +863,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -886,7 +886,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: _test; `pub run build_runner test -- -p chrome --test-randomize-ordering-seed=random`, `pub run build_runner test -- -p vm test/configurable_uri_test.dart --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -913,7 +913,7 @@ jobs:
     name: "unit_test; windows; Dart dev; PKG: build_vm_compilers; `pub run test`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -946,7 +946,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1002,7 +1002,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1058,7 +1058,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1114,7 +1114,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1174,7 +1174,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1230,7 +1230,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1276,7 +1276,7 @@ jobs:
     name: "e2e_test; windows; Dart dev; PKG: _test_null_safety; `pub run build_runner test -- -p chrome,vm --test-randomize-ordering-seed=random`, `pub run build_runner test --define=\"build_web_compilers:entrypoint=compiler=dart2js\" -- -p chrome --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1326,7 +1326,7 @@ jobs:
     name: "e2e_test; windows; Dart dev; PKG: _test; `pub run test --total-shards 3 --shard-index 2 --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1372,7 +1372,7 @@ jobs:
     name: "e2e_test; windows; Dart dev; PKG: _test; `pub run test --total-shards 3 --shard-index 1 --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1428,7 +1428,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1474,7 +1474,7 @@ jobs:
     name: "e2e_test; windows; Dart dev; PKG: _test; `pub run test --total-shards 3 --shard-index 0 --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1530,7 +1530,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1586,7 +1586,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:dev
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: dev
       - id: checkout
@@ -1632,7 +1632,7 @@ jobs:
     name: "e2e_test_cron; windows; Dart edge; PKG: _test_null_safety; `pub run build_runner test -- -p chrome,vm --test-randomize-ordering-seed=random`, `pub run build_runner test --define=\"build_web_compilers:entrypoint=compiler=dart2js\" -- -p chrome --test-randomize-ordering-seed=random`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: main
       - id: checkout
@@ -1706,7 +1706,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:main
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: main
       - id: checkout
@@ -1770,7 +1770,7 @@ jobs:
     name: "e2e_test_cron; windows; Dart edge; PKG: _test; `pub run test`"
     runs-on: windows-latest
     steps:
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: main
       - id: checkout
@@ -1840,7 +1840,7 @@ jobs:
             os:ubuntu-latest;pub-cache-hosted;dart:main
             os:ubuntu-latest;pub-cache-hosted
             os:ubuntu-latest
-      - uses: dart-lang/setup-dart@v0.3
+      - uses: dart-lang/setup-dart@v0.5
         with:
           sdk: main
       - id: checkout
