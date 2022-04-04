@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: dart-lang/setup-dart@v1.3
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: dart pub get
         working-directory: tool
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           repository: simolus3/moor
           ref: latest-release
